@@ -4,12 +4,10 @@
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="theunraveler"
+#Temas para ZSH, si no conoces los temas visita:
+#https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -59,10 +57,12 @@ plugins=(git rails ruby)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
+# Codificación de caracteres que se muestra en la terminal.
 export LANG=es_VE.UTF-8
 
+# Editor de preferencia, comenta esta línea si no lo tienen instalado.
 export EDITOR='micro'
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -81,10 +81,10 @@ export EDITOR='micro'
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
+# ALIAS
+alias zshconfig="micro ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias update="sudo pacman -Syyuu"
+# alias update="sudo pacman -Syyuu"
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
