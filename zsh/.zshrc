@@ -50,10 +50,10 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby)
+plugins=(git rails ruby c++ heroku)
 
 
-# User configuration
+# Configuración del Usuario
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -76,6 +76,7 @@ export EDITOR='micro'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -94,6 +95,8 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#export PATH="/usr/local/heroku/bin" # Add Heroku to PATH for scripting
 autoload -U compinit promptinit
 compinit
 promptinit
+PATH="/usr/local/heroku/bin:$PATH"
