@@ -84,6 +84,8 @@ export EDITOR='micro'
 #
 # ALIAS
 alias zshconfig="micro ~/.zshrc"
+alias menuconfig="micro ~/.config/openbox/menu.xml"
+alias zeal="bin/zeal"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias update="sudo pacman -Syyuu"
 
