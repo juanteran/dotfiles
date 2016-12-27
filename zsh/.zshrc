@@ -50,7 +50,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby c++ heroku)
+plugins=(git gem rails ruby c++)
 
 
 # Configuración del Usuario
@@ -86,9 +86,10 @@ export EDITOR='micro'
 alias zshconfig="micro ~/.zshrc"
 alias menuconfig="micro ~/.config/openbox/menu.xml"
 alias zeal="bin/zeal"
+alias nethogs="sudo nethogs"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias update="sudo pacman -Syyuu"
-
+alias update="sudo pacman -Syyuu"
+alias remove="sudo pacman -Rns"
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
